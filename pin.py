@@ -50,7 +50,7 @@ def _setup_one(channel,in_out,initial):
 
 def check_in_out(channel,in_out):
     try:
-        if pins[channel]==IN and in_out=OUT:
+        if pins[channel]==IN and in_out==OUT:
             pass
         elif not pins[channel]==in_out:
             raise InputOutputError("Wrong configuration for channel {}! You're treating an input channel as output or vice versa.")
